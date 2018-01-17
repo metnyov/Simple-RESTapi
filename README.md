@@ -53,7 +53,3 @@
 { "id": "10dcdccb-8876-4245-ac53-92900c6509bd" }
 ```
 `curl -H "Content-Type: application/json" -X DELETE -d @request.json  http://localhost:8080/`
-
-## Автор ##
-
-* *Vadim Metnyov*
