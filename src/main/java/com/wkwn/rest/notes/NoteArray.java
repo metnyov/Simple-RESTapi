@@ -21,9 +21,10 @@ public class NoteArray {
 	
 	public static boolean updNoteById(String id, String title, String text) {
 		if (notes.containsKey(id)) {
-			notes.get(id).setTitle(title);
-			notes.get(id).setText(text);
-			notes.get(id).refreshUpdateDate();
+			Note n = notes.get(id);
+			n.setTitle(title);
+			n.setText(text);
+			n.refreshUpdateDate();
 			return true;
 		}
 		return false;
